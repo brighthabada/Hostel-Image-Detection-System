@@ -1,0 +1,36 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.split-screen {
+  display: flex; /* Use flexbox for split screen */
+  height: 100vh; /* Full viewport height */
+}
+
+.camera,
+.text {
+  flex: 1; /* Equal width for both components */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px; /* Added rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.camera {
+  background-color: #f0f0f0; /* Optional: light background for camera */
+}
+
+.camera video {
+  max-width: 100%; /* Responsive video */
+  max-height: 100%; /* Responsive video */
+  border-radius: 15px; /* Rounded corners for video */
+}

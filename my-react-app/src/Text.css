@@ -1,0 +1,38 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  height: 100%; /* Full height of the container */
+}
+
+h1 {
+  color: black; /* Set the color of the h1 to black */
+  margin-top: 400; /* Remove default margin */
+}
+
+.powered-by {
+  color: #888; /* Lighter color for the powered by text */
+  margin: 0px 0; /* Spacing around the text */
+}
+
+.instructions {
+  text-align: center; /* Center the instructions text */
+  margin: 80px 0; /* Spacing around the instructions */
+  color: black; /* Set the color of the instructions text to black */
+  font-weight: bold; /* Make the text bold */
+  font-size: 1.4em; /* Increase the font size */
+}
+
+.hostel-image {
+  max-width: 60%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners for the image */
+  margin-top: -60px; /* Increased margin to move the image down */
+}
+
+.highlight {
+  background-color: rgb(206, 206, 189); /* Highlight background color */
+  font-weight: bold; /* Ensure highlighted text is bold */
+}

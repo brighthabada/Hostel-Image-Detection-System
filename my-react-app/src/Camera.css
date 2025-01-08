@@ -1,0 +1,18 @@
+.camera {
+  width: 80%; /* Adjusted width for a smaller display */
+  height: 80%; /* Adjusted height for a smaller display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Rounded edges for the camera display */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  background-color: #f0f0f0; /* Optional: light background for camera */
+  margin: auto; /* Center the camera display */
+}
+
+.video {
+  width: 100%; /* Full width of the video */
+  height: 100%; /* Full height of the video */
+  border-radius: 15px; /* Rounded edges for the video */
+  object-fit: cover; /* Ensure the video covers the area without distortion */
+}
