@@ -15,8 +15,11 @@ while True:
     # Convert frame to grayscale (Haar cascade requires grayscale images)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
+    # Apply histogram equalization to improve contrast
+    gray = cv2.equalizeHist(gray)
+    
     # Detect faces in the frame
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=3, minSize=(30, 30))
     
     # Check if any faces are detected
     if len(faces) > 0:
